@@ -1,0 +1,186 @@
+@font-face {
+    font-family: "HankenGrotesk";
+    src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+
+
+.container {
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 1px 1rem 1rem .8rem rgba(0, 0, 0, .1);
+}
+.result {
+    background-image: linear-gradient(0deg ,#6743FF, #312CEA);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap: 1rem;
+    color: white;
+}
+.result .percentage {
+    background-image: linear-gradient(0deg ,#4B24CD, #312CEA);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    padding: 2rem;
+}
+.header {
+    font-weight: bold;
+    font-size: 1.1rem;
+    opacity: .6;
+}
+.result .percentage .big {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.result .percentage .small {
+    font-weight: bold;
+    opacity: .5;
+}
+.great {
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+.result p {
+    opacity: .6;
+    font-weight:600;
+    text-align: center;
+}
+.summary {
+    padding:  2rem 1.5rem;
+}
+.summary h3 {
+    opacity: 0.6;
+}
+.summary .chips {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    
+}
+.summary .chips .chip {
+    display: flex;
+    background-color: blue;
+    padding: 1rem;
+    width: 20rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .3rem;
+}
+.summary .chips .chip .left {
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+.summary .chips .reaction {
+    background-color: #FFF6F5;
+}
+.summary .chips .reaction .left  {
+    color: #E5636E;
+}
+.summary .chips .memory {
+    background-color: #FFFBF2;
+}
+.summary .chips .memory .left  {
+    color: #F6D276;
+}
+.summary .chips .verbal {
+    background-color: #F2FBFA;
+}
+.summary .chips .verbal .left  {
+    color: #4BA793;
+}
+.summary .chips .visual {
+    background-color: #F3F3FD;
+}
+.summary .chips .visual .left  {
+    color: #434CB7;
+}
+.summary .chips .chip .right {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.summary .chips .chip .right .percentage {
+    opacity: .7;
+}
+
+.summary .btn {
+    width: 20rem;
+    padding: 1rem 0;
+    color: white;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.2rem;
+    margin-top: .5rem;
+    font-weight: bold;
+    background-color: #303B59;
+    cursor: pointer;
+}
+
+.summary .btn:hover {
+    background-color: #4434EF;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 100vh;
+        flex-direction: column;
+    }
+    .result{
+        border-radius: 0 0 40px 40px;
+        height:20rem;
+        padding : 2rem 0;
+
+    }
+    .summary h3 {
+        margin-left: 1rem;
+    }
+    .html {
+        overflow: hidden;
+    }
+    .body {
+        max-width: 100%;
+    }
+    .result p {
+        width: 15rem;  
+    }
+    .summary {
+        width: 100%;
+        padding: 0 0;
+    }
+    .summary .chips {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px) {
+
+    .result{
+        padding:1rem 3rem ;
+    }
+    .result p {
+        width: 14rem;
+    }
+
+    body {
+        height:  100vh;
+        display: grid;
+        font-family: "HankenGrotesk";
+        place-items: center;
+        overflow: hidden;
+    }
+
+}
+
+
